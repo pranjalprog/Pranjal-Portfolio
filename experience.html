@@ -10,10 +10,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <header>
+
+  <header>
     <nav>
       <a href="index.html">Pranjal Jain</a>
-      <ul>
+      <div class="nav-right">
+        <button class="theme-toggle" aria-label="Toggle dark mode">&#127769;</button>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="skills.html">Skills</a></li>
@@ -22,35 +26,41 @@
         <li><a href="achievements.html">Achievements</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section id = "experience">
-        <h1>Experience</h1>
-        
-        <article>
-            <h2>Research and Development Intern &mdash; IIT Delhi.</h2>
-            <p><time>Apr 2026 - July 2026</time></p>
-            <p> Working on MRI and fMRI concepts, and a CNN-based deep learning model.</p>
-        </article>
-        <article>
-            <h2>Software Development Intern &mdash; Encrypta.ai, Bengaluru</h2>
-            <p><time>Jan 2026 – Mar 2026</time></p>
-            <p>Worked on an advanced AI chatbot agent handling user queries daily.</p>
-        </article>
-        <article>
-            <h2>Software Development Intern &mdash; NETESENZ Technologies LLP</h2>
-            <p><time>Jun 2025 – Aug 2025</time></p>
-            <p>Worked on an AI-powered GPT Funnel platform, reducing manual effort by 40%.</p>
-      </article>
-         
+    <section id="experience">
+      <h1>Experience</h1>
 
+      <article>
+        <h2>Research and Development Intern &mdash; IIT Delhi</h2>
+        <p><time>Apr 2026 – Present</time></p>
+        <p>
+          Working on MRI and fMRI concepts, and a CNN-based deep learning model
+          on CWT scalograms to classify 5 cardiac conditions from PCG signals.
+        </p>
+      </article>
+
+      <article>
+        <h2>Software Development Intern &mdash; Encrypta, Bengaluru</h2>
+        <p><time>Jan 2026 – Mar 2026</time></p>
+        <p>Worked on an advanced AI chatbot agent handling user queries daily.</p>
+      </article>
+
+      <article>
+        <h2>Software Development Intern &mdash; NETESENZ Technologies LLP</h2>
+        <p><time>Jun 2025 – Aug 2025</time></p>
+        <p>Worked on an AI-powered GPT Funnel platform, reducing manual effort by 40%.</p>
+      </article>
     </section>
   </main>
 
-   <footer>
-    <p>&copy; 2026 Pranjal Jain. Built step by step</p>
+  <footer>
+    <p>&copy; 2026 Pranjal Jain. Built step by step: HTML &rarr; CSS &rarr; JS.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -11,41 +11,76 @@
 </head>
 <body>
 
-    <header>
+  <header>
     <nav>
       <a href="index.html">Pranjal Jain</a>
-      <ul>
+      <div class="nav-right">
+        <button class="theme-toggle" aria-label="Toggle dark mode">&#127769;</button>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="experience.html">Experience</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="project.html">Projects</a></li>
         <li><a href="achievements.html">Achievements</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      </div>
     </nav>
   </header>
 
-    <main>
-        <section id="contact">
-            <h1>Get In Touch</h1>
-            <p>Email: <a href="mailto:pranjaljain19022005@gmail.com">pranjaljain19022005@gmail.com</a></p>
-            <p>Phone: +91 7728870319</p>
-            <ul>
-                 <li><a href="https://pranjalportfolio19.netlify.app/">Portfolio</a></li>
-                 <li><a href="https://www.linkedin.com/in/pranjal-jain-733801354">LinkedIn</a></li>
-                 <li><a href="https://github.com/pranjalprog">GitHub</a></li>
-                 <li><a href="https://www.geeksforgeeks.org/profile/b2311v0y">GeeksforGeeks</a></li>
-                 <li><a href="https://leetcode.com/u/pranjalprog/">LeetCode</a></li>
-                 <li><a href="https://www.hackerrank.com/profile/pranjaljain19021">HackerRank</a></li>
-            </ul>
+  <main>
+    <section id="contact">
+      <h1>Get In Touch</h1>
+      <p>Email: <a href="mailto:pranjaljain19022005@gmail.com">pranjaljain19022005@gmail.com</a></p>
+      <p>Phone: +91 7728870319</p>
 
-        </section>
-    </main>
+      <!-- ============================
+           CONTACT FORM (Formspree)
+           - "action" mein apna Formspree URL daalo (form ID ke saath)
+           - "method" POST hota hai kyunki hum data SEND kar rahe hain
+           - Har input ka "name" attribute zaroori hai, Formspree isi
+             naam se email mein data dikhata hai (jaise "Name: Pranjal")
+      ============================ -->
+      <form action="https://formspree.io/f/mkjnvwyp" method="POST">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
 
-    <footer>
-    <p>&copy; 2026 Pranjal Jain. Built step by step</p>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <!-- Ye hidden field Formspree ko batata hai submit ke baad
+             kaha redirect karna hai (thanks page). Optional hai. -->
+        <input type="hidden" name="_next" value="contact.html">
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <ul>
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="https://www.linkedin.com/in/pranjal-jain-733801354/">LinkedIn</a></li>
+        <li><a href="https://github.com/pranjalprog">GitHub</a></li>
+        <li><a href="https://www.geeksforgeeks.org/profile/b2311v0y">GeeksforGeeks</a></li>
+        <li><a href="https://leetcode.com/u/pranjalprog/">LeetCode</a></li>
+        <li><a href="https://www.hackerrank.com/profile/pranjaljain19021">HackerRank</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Pranjal Jain. Built step by step: HTML &rarr; CSS &rarr; JS.</p>
   </footer>
-    
+
+  <script src="script.js"></script>
 </body>
 </html>
